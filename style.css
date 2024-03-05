@@ -1,0 +1,181 @@
+body{
+    background: #E9ECF8;
+}
+h1{
+    margin: 20px 0 0 0;
+}
+
+.cajas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 10px;
+}
+.cajaEntrada{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    height: 100%;
+    border-radius: 35px;
+}
+
+.cajaDeTextoEntrada{
+    font-family: "Inter";
+    color: #0A3871;
+    width: 50vw;
+    height: 50vh;
+    padding: 42px;
+    margin: 0 10px;
+    background: none;
+    border-radius: 25px;
+    resize: none;
+    font-size: 36px;
+    border: none;
+    box-shadow: 10px 10px 30px #000000;
+}
+
+.cajaDeTextoEntrada::placeholder{
+    color: #0A3871;
+}
+
+.cajaDeTextoEntrada:focus, :active{
+    border: none;
+    outline: none;
+}
+
+.terminos{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botonE{
+    margin: 20px 0 20px 0;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    background: #0A3871;
+    color: white;
+    font-size: 16px;
+    display: inline;
+    padding: 25px 35px;
+    transition: 5ms;
+}
+
+.botonE:active{
+    background: white;
+    color: #000000;
+}
+
+.botonD{
+    margin: 20px 0 20px 24px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    color: #0A3871;
+    font-size: 16px;
+    display: inline;
+    padding: 25px 35px;
+}
+
+.botonD:active{
+    background: #0A3871;
+    color: white;
+}
+
+.encriptado{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center  ;
+    margin: 20px;
+    width: 20%;
+    height: 67vh;
+    background: white;
+    border-radius: 35px;
+    box-shadow: 10px 10px 30px #000000;
+}
+.cajaSalida{
+    text-align: center;
+    width: 18vw;
+    height: 50vh;
+    padding: 10px;
+    margin: 20px;
+    background: white;
+    border-radius: 25px;
+    resize: none;
+    font-size: 36px;    
+
+}
+
+.cajaEncriptada{
+    margin: 10px;
+    padding: 20px;
+    font-family: "Inter";
+    color: #0A3871;
+    width: 90%;
+    height: 50%;
+    padding: 20px;
+    background: none;
+    border-radius: 25px;
+    resize: none;
+    font-size: 36px;
+    border: none;
+}
+
+.cajaEncriptada::placeholder{
+    color: #0A3871;
+}
+
+.cajaEncriptada:focus, :active{
+    border: none;
+    outline: none;
+}
+.imagen{
+    width: 100%;
+
+}
+
+.btn-Copiar{
+    margin: 20px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    color: #0A3871;
+    font-size: 16px;
+    display: inline;
+    padding: 25px 35px;
+}
+
+.btn-Copiar:active{
+    background: #0A3871;
+    color: white;
+}
+
+footer{
+    font-size: 20px;
+    background: #000000;
+    color: white;
+    padding: 5%;
+    text-align: center;
+}
+
+/*Aquí empieza la parte responsiva*/
+
+@media only screen and (max-width: 960px){
+    .cajaEntrada{
+        width: 90%;
+    }
+    .cajaDeTextoEntrada{
+        width: 80%;
+    }
+    
+    .encriptado{
+        width: 90%;
+    }
+    .cajaSalida{
+        width: 90%;
+    }
+    .cajaEncriptada{
+        width: 90%;
+    }
+}

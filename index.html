@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge Encriptador</title>
+</head>
+<body>
+    <h1><img src="Imagenes/Logo.png"></h1>
+    <main class="cajas">
+            <div class="cajaEntrada">
+                <textarea type="textarea" name="textbox" id="cajaDeTextoEntrada" class="cajaDeTextoEntrada" placeholder="Escribe aquí tu texto:" cols="50" rows="100" onkeypress="return ((event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))"></textarea>
+                <div class="botones">
+                    <button onclick="encriptar();" class="botonE">
+                        <span>Encriptar</span>
+                    </button>
+                    <button onclick="desencriptar();" class="botonD">
+                        <span>Desencriptar</span>
+                    </button>
+                </div>
+                <div class="terminos">
+                    <p>Sin mayusculas ni caracteres especiales</p>
+                </div>
+            </div>
+
+            <div class="encriptado">
+                <div class="cajaSalida" id="cajaSalida">
+                    <textarea type="text" id="cajaEncriptada" name="cajaEncriptada" class="cajaEncriptada" cols="50" rows="100" placeholder="Tu resultado aquí" readonly></textarea>
+                    <img class="imagen" id="imagen" src="Imagenes/Muñeco.png">
+                </div>
+                <button class="btn-Copiar" id="btn-copiar">
+                    <span>Copiar</span>
+                </button>
+            </div>
+    </main>
+</body>
+
+<script src="script.js"></script>
+
+<footer>
+    <p>&copy;Giovanni Corona 25/02/2024</p>
+    <label>
+        (:)
+    </label>
+</footer>
+</html>
